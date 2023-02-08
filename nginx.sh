@@ -1,3 +1,12 @@
+#path home
+/data/data/com.termux/files/home
+
+#path file android
+/data/data/com.termux/files/home/storage/shared
+
+#path bin
+/data/data/com.termux/files/usr/bin
+
 #path nginx.conf
 cd /data/data/com.termux/files/usr/etc/nginx/
 
