@@ -30,3 +30,24 @@ httpd -t
 
 #run apache2
 apachectl
+
+
+pkg install mariadb -y
+
+mysqld_safe -u root &
+
+# enable akses ke akun root
+mysql -u $(whoami)
+
+use mysql;
+set password for 'root'@'localhost' = password('root');
+flush privileges;
+quit;
+
+mysql -u root
+
+
+
+
+
+
