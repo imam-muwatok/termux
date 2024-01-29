@@ -41,10 +41,17 @@ mysql -u $(whoami)
 
 use mysql;
 set password for 'root'@'localhost' = password('root');
+
+
+
+CREATE USER 'muwatok'@'%' IDENTIFIED BY 'kmzway87aa';
+
+GRANT ALL PRIVILEGES ON *.* TO 'muwatok'@'%' IDENTIFIED BY 'kmzway87aa' WITH GRANT OPTION;
+
 flush privileges;
 quit;
 
-mysql -u root
+mysql -u muwatok
 
 
 
